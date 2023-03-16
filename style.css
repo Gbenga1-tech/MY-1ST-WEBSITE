@@ -1,0 +1,123 @@
+/*################# defaults  ###########*/
+nav,header,footer {
+    display: block;
+
+}
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body {
+   line-height: 1;
+   margin: 0;  
+}
+  
+body {
+   margin: 0;
+   padding: 0;
+   background: url(./images/portrait-of-a-beautiful-african-woman-with-laptop-on-grey-backround-copy-space.jpg);
+   width: 100%;
+   height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+
+
+.col-1 {width: 8.33%};
+ .col-2 {width: 16.66% ;}
+ .col-3 {width: 25% ;}
+ .col-4 {width: 33.33% ;}
+ .col-5 {width: 41.66% ;}
+ .col-6 {width: 50% ;}
+ .col-7 {width: 58.33% ;}
+ .col-8 {width: 66.66%}
+ .col-9 {width: 75%}
+ .col-10 {width: 83.33% ;}
+ .col-11 {width: 91.66% ;}
+ .col-12 {width: 100% ;}
+     
+ /*################# defaults  ###########*/
+nav,header,footer {
+   display: block;
+   font-size: 15px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+  line-height: 1.5;
+  margin: 0;  
+}
+
+/*################# nav bar ###########*/
+li {
+   list-style: none;
+}
+
+a{
+   text-decoration: none;
+   color: black;
+   font-size: 1rem;
+}
+
+a:hover {
+   color: orange;
+}
+ 
+.navbar {
+   width: 100%;
+   height: 60px;
+   max-width: 1200px;
+   margin: auto;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.navbar .logo a {
+   font-size: 1.5rem;
+   font-weight: bold;
+   color: red;
+}
+.navbar .topnav {
+   display: flex;
+   gap: 2rem;
+}
+
+.navbar .action {
+   color: black;
+   font-size: 1rem;
+   cursor: pointer;
+   
+}
+.toggle{
+   display: none;
+}
+.action_btn {
+   background-color: orange;
+   color: black;
+   padding: 0.5rem 1rem;
+   border: none;
+   outline: none;
+   border-radius: 20px;
+   font-size: 0.8rem;
+   font-weight: bold;
+   cursor: pointer;
+   transition: scale .2 ease;
+}
+.action_btn:hover {
+   scale: 1.05;
+   color: white;
+}
+.action_btn:active {
+   scale:0.95;
+}
+
+/***** styles ****/
+header{
+   position: relative;
+   padding: 0 2rem;
+}
