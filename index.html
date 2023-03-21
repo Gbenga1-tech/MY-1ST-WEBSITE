@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Optimum</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 </head>
 <body >
-   
+    
+   <div class="hero">
     <header>
         <div class="navbar">
         <div class="logo"><a href="#">OPTIMUM</a></div>
@@ -20,28 +24,89 @@
                 <li><a href="#"> Contact us</a></li>
                 </ul>
                 <a href="#" class="action_btn">Get Started</a>
-                <div class="toggle"><a href="#">&#9776;</a></div>
-            
-            
+                <div class="toggle_btn"><a href="#">&#9776;</a></div>
+        
              
      
     </div>
+    <div class="dropdown_menu" >
+        <li><a href="#"> About</a></li>
+        <li><a href="#"> Services</a></li>
+        <li><a href="#"> Insights</a></li>
+        <li><a href="#"> Public Sector</a></li>
+        <li><a href="#"> Contact us</a></li>
+        <li><a href="#" class="action_btn">Get Started</a></li>
+    </div>
+
 </header>
+<main>
+    <div class="container" >
+        <div class="row">
+            <div class="col-6 ">
+           <div class="leftside-col">
+            <h1 class="first"> MODERN</h1>
+            <h1 class="second">SOFTWARE</h1>
+            <h1 class="third">SOLUTIONS</h1>
+            <button class="button">LEARN MORE</button>
+           </div>
+           </div>
+           </div>
+
+</main>
+
+</div>
+<div class="about">
+    <div class="subheader1"><h1>OUR SERVICES</h1></div>
+    <div class="subheader2"><h1>SERVICES WE PROVIDE</h1></div>
+</div>
 
 
+<!--postcards-->
+<div class="postcard-container">
+<div class="postcard">
+    <img src="./images/austin-distel-rxpThOwuVgE-unsplash.jpg" alt="image1">
+    <h2>TECHNOLOGY SERVICES</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sint architecto animi expedita facere officia ab dicta autem ad dolore!</p>
+</div>
+
+
+<div class="postcard">
+    <img src="./images/daniel-thomas-HA-0i0E7sq4-unsplash.jpg" alt="image1">
+    <h2>BUSINESS CONSULTING</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sint architecto animi expedita facere officia ab dicta autem ad dolore!</p>
+
+</div>
+
+<div class="postcard">
+    <img src="./images/jason-goodman-vbxyFxlgpjM-unsplash.jpg" alt="image1">
+    <h2>SOFTWARE SOLUTIONS</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sint architecto animi expedita facere officia ab dicta autem ad dolore!</p>
+
+</div>
+</div>
+
+
+
+
+
+
+
+<script>
+    const toggleBtn = document.querySelector('.toggle_btn')
+    const toggleBtnIcon = document.querySelector('.toggle_btn i')
+    const dropdownMenu = document.querySelector('.dropdown_menu')
+
+    toggleBtn.onclick =function () {
+    dropdownMenu.classList.toggle('open')
+    const isOpen = dropdownMenu.classList.contains('open')
+    toggleBtnIcon.classList = isOpen
+    ? '&#88;'
+    : '&#9776;' 
+  }
+
+</script>
  
  
- <script>
-     function dropdownMenu() {
- var x = document.getElementById("dropdownClick");
-     if (x.className === "topnav") {
-         x.className += " responsive";
-         /*change topnav to topnav.responsive*/
-     } else {
-         x.className = "topnav";
-     }
- }
- </script> 
 
     
 
